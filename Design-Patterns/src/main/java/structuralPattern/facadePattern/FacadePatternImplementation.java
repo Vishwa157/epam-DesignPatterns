@@ -13,7 +13,6 @@ public class FacadePatternImplementation {
 	
 	void TransferAmount(String accountNumber1, String accountNumber2, int amount) {
 		
-		
 		if(accountVerify.AccountVerification("Vishwa157", "3678")) {
 			new DebitedAmount(accountNumber1, amount);
 			new CreditedAmount(accountNumber2, amount);
@@ -26,8 +25,6 @@ public class FacadePatternImplementation {
 	
 	void creditedAmount(String accountNumber, int amount) {
 		
-		//Verification accountVerify=new Verification();
-		
 		if(accountVerify.AccountVerification("Vishwa157", "3678")) {
 			new DebitedAmount(accountNumber, amount);
 		}
@@ -38,8 +35,6 @@ public class FacadePatternImplementation {
 	}
 	
 	void debitedAmount(String accountNumber, int amount) {
-		
-		//Verification accountVerify=new Verification();
 		
 		if(accountVerify.AccountVerification("Vishwa157", "3678")) {
 			new CreditedAmount(accountNumber, amount);
